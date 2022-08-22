@@ -95,20 +95,22 @@
                         <h1 class="text-white text-3xl font-semibold mb-5">Budget</h1>
                         <div>
                             <label class="text-white" for="">Per Player</label>
-                            <input class="ml-2" type="text">
+                            <input id="player-price" class="ml-2" type="text">
                         </div>
-                        <button class="btn btn-primary mx-auto w-full my-4 w-3/4">Calculate</button>
-                        <p class="text-white">Player Expenses <span class="ml-4">$<span>00</span></span></p>
+                        <button id="btn-calculate" class="btn btn-primary mx-auto w-full my-4 w-3/4">Calculate</button>
+                        <p class="text-white">Player Expenses <span class="ml-4">$<span
+                                    id="player-expenses">00</span></span></p>
                         <div class="my-4">
-                            <label class="text-white" for="">Per Player</label>
-                            <input class="ml-2" type="text">
+                            <label class="text-white" for="">Manager</label>
+                            <input id="manager" class="ml-2" type="text">
                         </div>
                         <div>
-                            <label class="text-white" for="">Per Player</label>
-                            <input class="ml-2" type="text">
+                            <label class="text-white" for="">Coach</label>
+                            <input id="coach" class="ml-2" type="text">
                         </div>
-                        <button class="btn btn-primary mx-auto w-full my-4 w-3/4">Calculate Total</button>
-                        <p class="text-white">Player Expenses <span class="ml-4">$ <span>00</span></span></p>
+                        <button id="btn-total" class="btn btn-primary mx-auto w-full my-4 w-3/4">Calculate
+                            Total</button>
+                        <p class="text-white">Total <span class="ml-4">$ <span id="total">00</span></span></p>
                     </div>
                 </div>
             </div>
