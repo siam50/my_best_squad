@@ -5,6 +5,7 @@ for (const select of selectButton) {
         if (olList.childNodes.length <= 5) {
             event.target.setAttribute('disabled', 'disabled');
             const playerName = event.target.parentNode.parentNode.childNodes[1].innerText;
+            select.style.color = 'grey';
             const li = document.createElement('li');
             li.innerText = playerName;
             olList.appendChild(li);
