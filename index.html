@@ -24,59 +24,71 @@
     </header>
     <!-- Header Part End -->
     <main>
-        <section class="bg-yellow-400 w-4/5 mx-auto my-12">
-            <div class="grid grid-cols-4 gap-4">
+        <section class="bg-yellow-400 w-4/5 mx-auto my-16">
+            <div class="grid grid-cols-4 gap-5">
                 <!-- Player Card -->
-                <div class="grid grid-cols-3 gap-4 col-span-3">
-                    <div class="card card-compact w-full bg-slate-900 shadow-xl">
+                <div class="grid grid-cols-3 gap-5 col-span-3">
+                    <div class="card card-compact w-full bg-slate-900 shadow-xl rounded-none">
                         <figure><img src="images/babar.jpg" class="w-full h-40" alt="Shoes" /></figure>
                         <div class="card-body">
                             <h2 class="card-title text-white mx-auto">Babar Azam</h2>
+                            <p class="text-slate-400 text-white mx-auto">ODI RUN: 4664 <span class="ml-8"> WICKETS:
+                                    0</span></p>
                             <div class="card-actions justify-end">
                                 <button class="btn btn-primary mx-auto w-full btn-select">Select</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-compact w-full  bg-slate-900 shadow-xl">
+                    <div class="card card-compact w-full  bg-slate-900 shadow-xl rounded-none">
                         <figure><img src="images/Virat.jpg" class="w-full h-40" alt="Shoes" /></figure>
                         <div class="card-body">
                             <h2 class="card-title text-white mx-auto">Virat Kohli</h2>
+                            <p class="text-slate-400 text-white mx-auto">ODI RUN: 12344 <span class="ml-8"> WICKETS:
+                                    4</span></p>
                             <div class="card-actions justify-end">
                                 <button class="btn btn-primary mx-auto w-full btn-select">Select</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-compact w-full bg-slate-900 shadow-xl">
+                    <div class="card card-compact w-full bg-slate-900 shadow-xl rounded-none">
                         <figure><img src="images/sakib.jpg" class="w-full h-40" alt="Shoes" /></figure>
                         <div class="card-body ">
                             <h2 class="card-title text-white mx-auto">Shakib Al Hasan</h2>
+                            <p class="text-slate-400 text-white mx-auto">ODI RUN: 6755 <span class="ml-8"> WICKETS:
+                                    285</span></p>
                             <div class="card-actions justify-end">
                                 <button class="btn btn-primary mx-auto w-full btn-select">Select</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-compact w-full bg-slate-900 shadow-xl">
+                    <div class="card card-compact w-full bg-slate-900 shadow-xl rounded-none">
                         <figure><img src="images/Malinga.jpg" class="w-full h-40" alt="Shoes" /></figure>
                         <div class="card-body ">
                             <h2 class="card-title text-white mx-auto">Lasith Malinga</h2>
+                            <p class="text-slate-400 text-white mx-auto">ODI RUN: 567 <span class="ml-8"> WICKETS:
+                                    338</span></p>
                             <div class="card-actions justify-end">
                                 <button class="btn btn-primary mx-auto w-full btn-select">Select</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-compact w-full bg-slate-900 shadow-xl">
+                    <div class="card card-compact w-full bg-slate-900 shadow-xl rounded-none">
                         <figure><img src="images/tendulkar.jpg" class="w-full h-40" alt="Shoes" /></figure>
                         <div class="card-body ">
                             <h2 class="card-title text-white mx-auto">Sachin Tendulkar</h2>
+                            <p class="text-slate-400 text-white mx-auto">ODI RUN: 18426 <span class="ml-8"> WICKETS:
+                                    154</span></p>
                             <div class="card-actions justify-end">
                                 <button class="btn btn-primary mx-auto w-full btn-select">Select</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card card-compact w-full bg-slate-900 shadow-xl">
+                    <div class="card card-compact w-full bg-slate-900 shadow-xl rounded-none">
                         <figure><img src="images/mashrafe.jpg" class="w-full h-40" alt="Shoes" /></figure>
                         <div class="card-body ">
                             <h2 class="card-title text-white mx-auto">Mashrafi</h2>
+                            <p class="text-slate-400 text-white mx-auto">ODI RUN: 1787 <span class="ml-8"> WICKETS:
+                                    270</span></p>
                             <div class="card-actions justify-end">
                                 <button class="btn btn-primary mx-auto w-full btn-select">Select</button>
                             </div>
@@ -84,9 +96,9 @@
                     </div>
                 </div>
                 <!-- Selected Player Table -->
-                <div class="grid grid-rows-3 gap-4">
-                    <div class=" bg-slate-900 text-center">
-                        <h1 class="text-white text-3xl font-semibold mb-5">Select-V</h1>
+                <div class="grid grid-rows-3 gap-5">
+                    <div class=" bg-slate-900 text-center p-4">
+                        <h1 class="text-white text-3xl font-semibold mb-5">Selected-V</h1>
                         <ol id="ol-list" class="text-white">
 
                         </ol>
@@ -98,7 +110,7 @@
                             <input id="player-price" class="ml-2" type="text">
                         </div>
                         <button id="btn-calculate" class="btn btn-primary mx-auto w-full my-4 w-3/4">Calculate</button>
-                        <p class="text-white">Player Expenses <span class="ml-4">$<span
+                        <p class="text-white">Player Expenses = <span class="ml-1">$<span
                                     id="player-expenses">00</span></span></p>
                         <div class="my-4">
                             <label class="text-white" for="">Manager</label>
@@ -110,7 +122,8 @@
                         </div>
                         <button id="btn-total" class="btn btn-primary mx-auto w-full my-4 w-3/4">Calculate
                             Total</button>
-                        <p class="text-white">Total <span class="ml-4">$ <span id="total">00</span></span></p>
+                        <p class="text-white">Total = <span class="ml-1 text-rose-500 font-semibold">$ <span
+                                    id="total">00</span></span></p>
                     </div>
                 </div>
             </div>
