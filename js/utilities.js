@@ -1,15 +1,15 @@
 function getInputValue(inputId) {
     const inputField = document.getElementById(inputId);
     const inputValues = inputField.value;
-    const covertNumber = parseFloat(inputValues);
-    return covertNumber;
+    const convertNumber = parseFloat(inputValues);
+    return convertNumber;
 }
 
 function getElementValue(elementId) {
     const elementField = document.getElementById(elementId);
     const elementValue = elementField.innerText;
-    const covertNumber = parseFloat(elementValue);
-    return covertNumber;
+    const convertNumber = parseFloat(elementValue);
+    return convertNumber;
 }
 
 function setValue(elementId, value) {
